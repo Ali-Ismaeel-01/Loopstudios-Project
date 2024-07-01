@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero max-w-6xl mx-auto">
+        <nav class="px-6 py-12 flex justify-between items-center">
+          <img src="images/logo.svg" alt="" class="" />
+          <div class="hidden md:inline-block">
+            <ul
+              class="flex justify-between font-alata items-center font-black space-x-8 text-white"
+            >
+              <li class="flex flex-col justify-center items-center">
+                <a class="peer" href="#">About</a>
+                <div
+                  class="border-b border-b-white w-3/4 opacity-0 peer-hover:opacity-100"
+                ></div>
+              </li>
+              <li class="flex flex-col justify-center items-center">
+                <a class="peer" href="#">Careers</a>
+                <div
+                  class="border-b border-b-white w-3/4 opacity-0 peer-hover:opacity-100"
+                ></div>
+              </li>
+              <li class="flex flex-col justify-center items-center">
+                <a class="peer" href="#">Events</a>
+                <div
+                  class="border-b border-b-white w-3/4 opacity-0 peer-hover:opacity-100"
+                ></div>
+              </li>
+              <li class="flex flex-col justify-center items-center">
+                <a class="peer" href="#">Products</a>
+                <div
+                  class="border-b border-b-white w-3/4 opacity-0 peer-hover:opacity-100"
+                ></div>
+              </li>
+              <li class="flex flex-col justify-center items-center">
+                <a class="peer" href="#">Support</a>
+                <div
+                  class="border-b border-b-white w-3/4 opacity-0 peer-hover:opacity-100"
+                ></div>
+              </li>
+            </ul>
+          </div>
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block hamburger md:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </nav>
+        <div
+          id="menu"
+          class="absolute top-0 bottom-0 left-0 flex-col self-end hidden w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
+        >
+          <a href="#" class="hover:text-pink-500">About</a>
+          <a href="#" class="hover:text-pink-500">Careers</a>
+          <a href="#" class="hover:text-pink-500">Events</a>
+          <a href="#" class="hover:text-pink-500">Products</a>
+          <a href="#" class="hover:text-pink-500">Support</a>
+        </div>
+        <div
+          class="box-border my-20 mx-6 w-lg border-2 border-white p-4 title md:p-10"
+        >
+          <h2 class="text-white font-sans text-4xl md:text-6xl">
+            IMPRESSIVE EXPERIENCES THAT DELIVER
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- History -->
+    <section id="history">
+      <div
+        class="my-28 md:mt-28 md:mb-24 mx-6 text-center md:text-left md:relative max-w-6xl md:mx-auto"
+      >
+        <img src="images/desktop/image-interactive.jpg" alt="" />
+        <div
+          class="md:absolute md:bg-white md:bottom-0 md:right-4 md:w-[575px] md:pl-20 md:pt-12 md:pr-6"
+        >
+          <h2 class="text-black font-sans text-4xl mb-6 mt-10 md:text-5xl">
+            THE LEADER IN INTERACTIVE VR
+          </h2>
+          <p class="text-md text-gray-700 font-light">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- OUR CREATIONS Section -->
+    <section id="creation">
+      <div
+        class="mt-16 mb-12 text-center md:text-left md:flex md:justify-between md:items-center md:mb-4 max-w-6xl md:mx-auto"
+      >
+        <h2 class="text-black font-sans text-4xl mb-6 mt-10 md:text-5xl">
+          OUR CREATIONS
+        </h2>
+        <button
+          class="text-black text-md font-alata font-black tracking-widest border-2 border-black py-2 hover:text-white hover:bg-black hidden md:inline-block md:px-10 md:py-2.5"
+        >
+          SEE ALL
+        </button>
+      </div>
+      <!-- images Grid -->
+      <div
+        class="mx-6 gap-8 grid grid-cols-1 grid-rows-1 font-sans mb-28 md:grid-cols-4 md:grid-rows-2 max-w-6xl md:mx-auto"
+      >
+        <!-- First Image -->
+        <div class="group relative overflow-hidden">
+          <img
+            src="images/mobile/image-deep-earth.jpg"
+            alt=""
+            class="w-full md:hidden"
+          />
+          <img
+            src="images/desktop/image-deep-earth.jpg"
+            alt=""
+            class="w-full hidden md:inline-block group-hover:scale-110 transition-all duration-200"
+          />
+          <span
+            class="absolute text-2xl font-medium text-white bottom-4 left-6 z-10 group-hover:scale-110 transition-all duration-200 group-hover:text-black md:bottom-8 md:left-10 md:w-20"
+            >DEEP EARTH</span
+          >
+          <div
+            class="absolute bg-gradient-to-b from-transparent to-gray-900 w-full h-full bottom-0 group-hover:bg-gray-200 group-hover: group-hover:opacity-75 group-hover:to-transparent"
+          ></div>
+        </div>
+
+        <!-- Second Image -->
+        <div class="group relative overflow-hidden">
+          <img
+            src="images/mobile/image-night-arcade.jpg"
+            alt=""
+            class="w-full md:hidden"
+          />
+          <img
+            src="images/desktop/image-night-arcade.jpg"
+            alt=""
+            class="w-full hidden md:inline-block group-hover:scale-110 transition-all duration-200"
+          />
+          <span
+            class="w-20 absolute text-2xl font-medium text-white bottom-4 left-6 z-10 group-hover:scale-110 transition-all duration-200 group-hover:text-black md:bottom-8 md:left-10 md:w-30"
+            >NIGHT ARCADE</span
+          >
+          <div
+            class="absolute bg-gradient-to-b from-transparent to-gray-900 w-full h-full bottom-0 group-hover:bg-gray-200 group-hover: group-hover:opacity-75 group-hover:to-transparent"
+          ></div>
+        </div>
+
+        <!-- Third Image -->
+        <div class="group relative overflow-hidden">
+          <img
+            src="images/mobile/image-soccer-team.jpg"
+            alt=""
+            class="w-full md:hidden"
+          />
+          <img
+            src="images/desktop/image-soccer-team.jpg"
+            alt=""
+            class="w-full hidden md:inline-block group-hover:scale-110 transition-all duration-200"
+          />
+          <span
+            class="w-28 absolute text-2xl font-medium text-white bottom-4 left-6 z-10 group-hover:scale-110 transition-all duration-200 group-hover:text-black md:bottom-8 md:left-10 md:w-30"
+            >SOCCER TEAM VR</span
+          >
+          <div
+            class="absolute bg-gradient-to-b from-transparent to-gray-900 w-full h-full bottom-0 group-hover:bg-gray-200 group-hover: group-hover:opacity-75 group-hover:to-transparent"
+          ></div>
+        </div>
+
+        <!-- Forth Image -->
+        <div class="group relative overflow-hidden">
+          <img
+            src="images/mobile/image-grid.jpg"
+            alt=""
+            class="w-full md:hidden"
+          />
+          <img
+            src="images/desktop/image-grid.jpg"
+            alt=""
+            class="w-full hidden md:inline-block group-hover:scale-110 transition-all duration-200"
+          />
+          <span
+            class="w-28 absolute text-2xl font-medium text-white bottom-4 left-6 z-10 group-hover:scale-110 transition-all duration-200 group-hover:text-black md:bottom-8 md:left-10 md:w-30"
+            >THE GRID</span
+          >
+          <div
+            class="absolute bg-gradient-to-b from-transparent to-gray-900 w-full h-full bottom-0 group-hover:bg-gray-200 group-hover: group-hover:opacity-75 group-hover:to-transparent"
+          ></div>
+        </div>
+
+        <!-- Fifth Image -->
+        <div class="group relative overflow-hidden">
+          <img
+            src="images/mobile/image-from-above.jpg"
+            alt=""
+            class="w-full md:hidden"
+          />
+          <img
+            src="images/desktop/image-from-above.jpg"
+            alt=""
+            class="w-full hidden md:inline-block group-hover:scale-110 transition-all duration-200"
+          />
+          <span
+            class="w-32 absolute text-2xl font-medium text-white bottom-4 left-6 z-10 group-hover:scale-110 transition-all duration-200 group-hover:text-black md:bottom-8 md:left-10 md:w-30"
+            >FROM UP ABOVE VR</span
+          >
+          <div
+            class="absolute bg-gradient-to-b from-transparent to-gray-900 w-full h-full bottom-0 group-hover:bg-gray-200 group-hover: group-hover:opacity-75 group-hover:to-transparent"
+          ></div>
+        </div>
+
+        <!-- Sixth Image -->
+        <div class="group relative overflow-hidden">
+          <img
+            src="images/mobile/image-pocket-borealis.jpg"
+            alt=""
+            class="w-full md:hidden"
+          />
+          <img
+            src="images/desktop/image-pocket-borealis.jpg"
+            alt=""
+            class="w-full hidden md:inline-block group-hover:scale-110 transition-all duration-200"
+          />
+          <span
+            class="w-32 absolute text-2xl font-medium text-white bottom-4 left-6 z-10 group-hover:scale-110 transition-all duration-200 group-hover:text-black md:bottom-8 md:left-10 md:w-30"
+            >POCKET BOREALIS</span
+          >
+          <div
+            class="absolute bg-gradient-to-b from-transparent to-gray-900 w-full h-full bottom-0 group-hover:bg-gray-200 group-hover: group-hover:opacity-75 group-hover:to-transparent"
+          ></div>
+        </div>
+
+        <!-- Seventh Image -->
+        <div class="group relative overflow-hidden">
+          <img
+            src="images/mobile/image-curiosity.jpg"
+            alt=""
+            class="w-full md:hidden"
+          />
+          <img
+            src="images/desktop/image-curiosity.jpg"
+            alt=""
+            class="w-full hidden md:inline-block group-hover:scale-110 transition-all duration-200"
+          />
+          <span
+            class="w-32 absolute text-2xl font-medium text-white bottom-4 left-6 z-10 group-hover:scale-110 transition-all duration-200 group-hover:text-black md:bottom-8 md:left-10 md:w-30"
+            >THE CURIOSITY</span
+          >
+          <div
+            class="absolute bg-gradient-to-b from-transparent to-gray-900 w-full h-full bottom-0 group-hover:bg-gray-200 group-hover: group-hover:opacity-75 group-hover:to-transparent"
+          ></div>
+        </div>
+
+        <!-- Eighth Image -->
+        <div class="group relative overflow-hidden md:m-0">
+          <img
+            src="images/mobile/image-fisheye.jpg"
+            alt=""
+            class="w-full md:hidden"
+          />
+          <img
+            src="images/desktop/image-fisheye.jpg"
+            alt=""
+            class="w-full hidden md:inline-block group-hover:scale-110 transition-all duration-200"
+          />
+          <span
+            class="w-32 absolute text-2xl font-medium text-white bottom-4 left-6 z-10 group-hover:scale-110 transition-all duration-200 group-hover:text-black md:bottom-8 md:left-10 md:w-30"
+            >MAKE IT FISHEYE</span
+          >
+          <div
+            class="absolute bg-gradient-to-b from-transparent to-gray-900 w-full h-full bottom-0 group-hover:bg-gray-200 group-hover: group-hover:opacity-75 group-hover:to-transparent"
+          ></div>
+        </div>
+        <button
+          class="w-full text-black text-md font-alata font-black tracking-widest border-2 border-black py-2 hover:text-white hover:bg-black md:hidden"
+        >
+          SEE ALL
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+      <div
+        class="flex flex-col items-center text-center md:flex-row md:justify-between md:items-center md:text-left max-w-6xl md:mx-auto"
+      >
+        <div class="md:flex md:flex-col md:justify-start md:mb-14 md:mt-6">
+          <img
+            src="images/logo.svg"
+            alt=""
+            class="mt-10 mb-8 scale-90 md:m-0 md:self-start md:py-4 md:ml-1"
+          />
+          <ul
+            class="flex flex-col justify-between items-center font-bold space-y-8 mb-9 md:flex-row md:space-y-0 md:space-x-6 md:ml-3.5"
+          >
+            <li class="flex flex-col justify-center items-center">
+              <a class="peer" href="#">About</a>
+              <div
+                class="border-b border-b-white w-3/4 opacity-0 peer-hover:opacity-100"
+              ></div>
+            </li>
+            <li class="flex flex-col justify-center items-center">
+              <a class="peer" href="#">Careers</a>
+              <div
+                class="border-b border-b-white w-3/4 opacity-0 peer-hover:opacity-100"
+              ></div>
+            </li>
+            <li class="flex flex-col justify-center items-center">
+              <a class="peer" href="#">Events</a>
+              <div
+                class="border-b border-b-white w-3/4 opacity-0 peer-hover:opacity-100"
+              ></div>
+            </li>
+            <li class="flex flex-col justify-center items-center">
+              <a class="peer" href="#">Products</a>
+              <div
+                class="border-b border-b-white w-3/4 opacity-0 peer-hover:opacity-100"
+              ></div>
+            </li>
+            <li class="flex flex-col justify-center items-center">
+              <a class="peer" href="#">Support</a>
+              <div
+                class="border-b border-b-white w-3/4 opacity-0 peer-hover:opacity-100"
+              ></div>
+            </li>
+          </ul>
+        </div>
+        <div class="md:mt-6">
+          <div
+            class="flex justify-center items-center space-x-6 mb-6 md:justify-start"
+          >
+            <a href="#"><img src="images/icon-facebook.svg" alt="" /></a>
+            <a href="#"
+              ><img src="images/icon-twitter.svg" alt="" class="scale-125"
+            /></a>
+            <a href="#"><img src="images/icon-pinterest.svg" alt="" /></a>
+            <a href="#"><img src="images/icon-instagram.svg" alt="" /></a>
+          </div>
+          <p class="text-gray-500 font-bold mb-20">
+            © 2022 Loopstudios. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
